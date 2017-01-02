@@ -1,7 +1,10 @@
 Less CSS Preprocessor
 ========
 
-This a content package project generated using the multimodule-content-package-archetype.
+This a content package project generated using the multimodule-content-package-archetype 
+using command ``mvn archetype:generate -DarchetypeRepository=http://repo.adobe.com/nexus/content/groups/public/ -DarchetypeGroupId=com.day.jcr.vault -DarchetypeArtifactId=multimodule-content-package-archetype -DarchetypeVersion=1.0.2``
+
+AEM Version: 6.2
 
 Building
 --------
