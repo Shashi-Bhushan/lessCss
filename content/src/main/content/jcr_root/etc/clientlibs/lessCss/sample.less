@@ -1,4 +1,4 @@
-@brand-color: #4455EE;
+@import "variable.less";
 
 #header {
   background-color: darken(@brand-color, 10%);
@@ -10,17 +10,21 @@ h3 {
   color: darken(@brand-color, 20%);
 }
 
+/*
+Body Section - This Comment stays in Generated CSS
+*/
+// This comment will not stay in Generated CSS
 body {
   text-align: center;
 
   .dark {
-    background-color: @brand-color;
-    border: 3px solid darken(@brand-color, 30%);
+    background-color: darken(@brand-color, 5%);
+    border: 3px solid darken(@border-color, 10%);
   }
 
   .light {
-    background-color: @brand-color;
-    border: 3px solid lighten(@brand-color, 30%);
+    background-color: lighten(@brand-color, 5%);
+    border: 3px solid lighten(@border-color, 10%);
   }
 
 }
