@@ -1,24 +1,26 @@
 @brand-color: #4455EE;
 
-#header { background-color: @brand-color; }
-#footer { color: @brand-color; }
-h3 { color: @brand-color; }
+#header {
+  background-color: darken(@brand-color, 10%);
+}
+#footer {
+  background-color: lighten(@brand-color, 10%);
+}
+h3 {
+  color: darken(@brand-color, 20%);
+}
 
 body {
-  #header {
+  text-align: center;
+
+  .dark {
     background-color: @brand-color;
+    border: 3px solid darken(@brand-color, 30%);
   }
 
-  #footer {
-    color: @brand-color;
-  }
-
-  h3 {
-    color: @brand-color;
-
-    .pointer {
-      cursor: pointer;
-    }
+  .light {
+    background-color: @brand-color;
+    border: 3px solid lighten(@brand-color, 30%);
   }
 
 }
